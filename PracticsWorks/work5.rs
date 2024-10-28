@@ -15,11 +15,11 @@ fn diagonalDifference(arr: &[Vec<i32>]) -> i32 {
     let mut secondary_diagonal_sum = 0;
 
     for i in 0..n {
-        primary_diagonal_sum += arr[i][i]; // Sum for the primary diagonal
-        secondary_diagonal_sum += arr[i][n - 1 - i]; // Sum for the secondary diagonal
+        primary_diagonal_sum += arr[i][i];
+        secondary_diagonal_sum += arr[i][n - 1 - i];
     }
 
-    (primary_diagonal_sum - secondary_diagonal_sum).abs() // Return the absolute difference
+    (primary_diagonal_sum - secondary_diagonal_sum).abs()
 }
 
 fn main() {
