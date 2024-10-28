@@ -8,9 +8,9 @@ use std::io::{self, BufRead};
 
 fn staircase(n: i32) {
     for i in 1..=n {
-        let spaces = " ".repeat((n - i) as usize); // Create spaces
-        let hashes = "#".repeat(i as usize); // Create hashes
-        println!("{}{}", spaces, hashes); // Print spaces followed by hashes
+        let spaces = " ".repeat((n - i) as usize);
+        let hashes = "#".repeat(i as usize);
+        println!("{}{}", spaces, hashes);
     }
 }
 
