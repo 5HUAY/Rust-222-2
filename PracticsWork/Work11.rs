@@ -3,7 +3,6 @@ fn countApplesAndOranges(s: i32, t: i32, a: i32, b: i32, apples: &[i32], oranges
     let mut apple_count = 0;
     let mut orange_count = 0;
 
-    // Count apples
     for &apple in apples {
         let final_position = a + apple;
         if final_position >= s && final_position <= t {
@@ -11,7 +10,6 @@ fn countApplesAndOranges(s: i32, t: i32, a: i32, b: i32, apples: &[i32], oranges
         }
     }
 
-    // Count oranges
     for &orange in oranges {
         let final_position = b + orange;
         if final_position >= s && final_position <= t {
@@ -19,7 +17,6 @@ fn countApplesAndOranges(s: i32, t: i32, a: i32, b: i32, apples: &[i32], oranges
         }
     }
 
-    // Output the counts
     println!("{}", apple_count);
     println!("{}", orange_count);
 }
